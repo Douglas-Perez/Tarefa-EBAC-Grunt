@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     document.querySelector('#rolar').addEventListener('click', function() {
         document.querySelector('.resultado').style.display = 'block';
-        document.querySelector('#resultado-valor').style.color = '#e9495e'
+        document.querySelector('#resultado-valor').style.visibility = 'hidden'
         valorDado = parseInt(valorDado)
     
         let numeroAleatorio = Math.random() * valorDado
         document.getElementById('resultado-valor').innerText = Math.floor(numeroAleatorio + 1)
         setTimeout(function()
-        {document.querySelector('#resultado-valor').style.color = '#fff';}, 200)
+        {document.querySelector('#resultado-valor').style.visibility = 'visible';}, 200)
     })
 })
