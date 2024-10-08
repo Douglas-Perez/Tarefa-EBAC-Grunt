@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="@@CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Lançador de dados</h1>
+        <h2>Selecione um dado:</h2>
+        <div class="dados">
+            <button id="20" class="dice-btn selected"><img src="images/d20.png" alt="dado de 20 lados"></button>
+            <button id="12" class="dice-btn"><img src="images/d12.png" alt="dado de 12 lados"></button>
+            <button id="10" class="dice-btn"><img src="images/d10.png" alt="dado de 10 lados"></button>
+            <button id="8" class="dice-btn"><img src="images/d8.png" alt="dado de 8 lados"></button>
+            <button id="6" class="dice-btn"><img src="images/d6.png" alt="dado de 6 lados"></button>
+            <button id="4" class="dice-btn"><img src="images/d4.png" alt="dado de 4 lados"></button>
+        </div>
+        <div class="confirma">
+            <button id="rolar">Rolar</button>
+        </div>
+        <div class="resultado">
+            O dado caiu no: <span id="resultado-valor"></span>
+        </div>
+    </main>
+    <script src="@@JS"></script>
+</body>
+</html>
